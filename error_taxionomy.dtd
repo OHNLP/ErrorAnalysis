@@ -1,0 +1,231 @@
+<!ENTITY name "Error_Taxionomy_schema_1_0">
+
+<!ELEMENT Annotation_Error ( #PCDATA ) >
+<!ATTLIST Annotation_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Annotation_Error evaluation_subject ( human | model )  >
+<!ATTLIST Annotation_Error comment CDATA "" >
+
+<!ELEMENT Guideline_Error ( #PCDATA ) >
+<!ATTLIST Guideline_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Guideline_Error evaluation_subject ( human | model )  >
+<!ATTLIST Guideline_Error comment CDATA "" >
+
+<!ELEMENT Misclassification ( #PCDATA ) >
+<!ATTLIST Misclassification evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Misclassification evaluation_subject ( human | model )  >
+<!ATTLIST Misclassification comment CDATA "" >
+
+<!ELEMENT Missing_Annotation ( #PCDATA ) >
+<!ATTLIST Missing_Annotation evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Missing_Annotation evaluation_subject ( human | model )  >
+<!ATTLIST Missing_Annotation comment CDATA "" >
+
+<!ELEMENT Contexual_Error ( #PCDATA ) >
+<!ATTLIST Contexual_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Contexual_Error evaluation_subject ( human | model )  >
+<!ATTLIST Contexual_Error comment CDATA "" >
+
+<!ELEMENT Absence_of_Context ( #PCDATA ) >
+<!ATTLIST Absence_of_Context evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Absence_of_Context evaluation_subject ( human | model )  >
+<!ATTLIST Absence_of_Context comment CDATA "" >
+
+<!ELEMENT Certainty ( #PCDATA ) >
+<!ATTLIST Certainty evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Certainty evaluation_subject ( human | model )  >
+<!ATTLIST Certainty comment CDATA "" >
+
+<!ELEMENT Differential_Diagnosis ( #PCDATA ) >
+<!ATTLIST Differential_Diagnosis evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Differential_Diagnosis evaluation_subject ( human | model )  >
+<!ATTLIST Differential_Diagnosis comment CDATA "" >
+
+<!ELEMENT Hypothetical_Language ( #PCDATA ) >
+<!ATTLIST Hypothetical_Language evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Hypothetical_Language evaluation_subject ( human | model )  >
+<!ATTLIST Hypothetical_Language comment CDATA "" >
+
+<!ELEMENT Medical_Grading ( #PCDATA ) >
+<!ATTLIST Medical_Grading evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Medical_Grading evaluation_subject ( human | model )  >
+<!ATTLIST Medical_Grading comment CDATA "" >
+
+<!ELEMENT Negation ( #PCDATA ) >
+<!ATTLIST Negation evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Negation evaluation_subject ( human | model )  >
+<!ATTLIST Negation comment CDATA "" >
+
+<!ELEMENT Possible_and_Probable_Language ( #PCDATA ) >
+<!ATTLIST Possible_and_Probable_Language evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Possible_and_Probable_Language evaluation_subject ( human | model )  >
+<!ATTLIST Possible_and_Probable_Language comment CDATA "" >
+
+<!ELEMENT Exclusion ( #PCDATA ) >
+<!ATTLIST Exclusion evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Exclusion evaluation_subject ( human | model )  >
+<!ATTLIST Exclusion comment CDATA "" >
+
+<!ELEMENT Medical_Evaluation ( #PCDATA ) >
+<!ATTLIST Medical_Evaluation evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Medical_Evaluation evaluation_subject ( human | model )  >
+<!ATTLIST Medical_Evaluation comment CDATA "" >
+
+<!ELEMENT Medical_Instruction ( #PCDATA ) >
+<!ATTLIST Medical_Instruction evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Medical_Instruction evaluation_subject ( human | model )  >
+<!ATTLIST Medical_Instruction comment CDATA "" >
+
+<!ELEMENT Medical_Risk ( #PCDATA ) >
+<!ATTLIST Medical_Risk evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Medical_Risk evaluation_subject ( human | model )  >
+<!ATTLIST Medical_Risk comment CDATA "" >
+
+<!ELEMENT Patient_Education ( #PCDATA ) >
+<!ATTLIST Patient_Education evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Patient_Education evaluation_subject ( human | model )  >
+<!ATTLIST Patient_Education comment CDATA "" >
+
+<!ELEMENT Relation_Error ( #PCDATA ) >
+<!ATTLIST Relation_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Relation_Error evaluation_subject ( human | model )  >
+<!ATTLIST Relation_Error comment CDATA "" >
+
+<!ELEMENT Section ( #PCDATA ) >
+<!ATTLIST Section evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Section evaluation_subject ( human | model )  >
+<!ATTLIST Section comment CDATA "" >
+
+<!ELEMENT Temporal_Status ( #PCDATA ) >
+<!ATTLIST Temporal_Status evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Temporal_Status evaluation_subject ( human | model )  >
+<!ATTLIST Temporal_Status comment CDATA "" >
+
+<!ELEMENT History ( #PCDATA ) >
+<!ATTLIST History evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST History evaluation_subject ( human | model )  >
+<!ATTLIST History comment CDATA "" >
+
+<!ELEMENT Present ( #PCDATA ) >
+<!ATTLIST Present evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Present evaluation_subject ( human | model )  >
+<!ATTLIST Present comment CDATA "" >
+
+<!ELEMENT Subject ( #PCDATA ) >
+<!ATTLIST Subject evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Subject evaluation_subject ( human | model )  >
+<!ATTLIST Subject comment CDATA "" >
+
+<!ELEMENT Family_Member ( #PCDATA ) >
+<!ATTLIST Family_Member evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Family_Member evaluation_subject ( human | model )  >
+<!ATTLIST Family_Member comment CDATA "" >
+
+<!ELEMENT Other_Subject ( #PCDATA ) >
+<!ATTLIST Other_Subject evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Other_Subject evaluation_subject ( human | model )  >
+<!ATTLIST Other_Subject comment CDATA "" >
+
+<!ELEMENT Patient ( #PCDATA ) >
+<!ATTLIST Patient evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Patient evaluation_subject ( human | model )  >
+<!ATTLIST Patient comment CDATA "" >
+
+<!ELEMENT Linguistic_Error ( #PCDATA ) >
+<!ATTLIST Linguistic_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Linguistic_Error evaluation_subject ( human | model )  >
+<!ATTLIST Linguistic_Error comment CDATA "" >
+
+<!ELEMENT Morphological_Error ( #PCDATA ) >
+<!ATTLIST Morphological_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Morphological_Error evaluation_subject ( human | model )  >
+<!ATTLIST Morphological_Error comment CDATA "" >
+
+<!ELEMENT Orthographic_Error ( #PCDATA ) >
+<!ATTLIST Orthographic_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Orthographic_Error evaluation_subject ( human | model )  >
+<!ATTLIST Orthographic_Error comment CDATA "" >
+
+<!ELEMENT Abbreviation_Error ( #PCDATA ) >
+<!ATTLIST Abbreviation_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Abbreviation_Error evaluation_subject ( human | model )  >
+<!ATTLIST Abbreviation_Error comment CDATA "" >
+
+<!ELEMENT Spelling_Error ( #PCDATA ) >
+<!ATTLIST Spelling_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Spelling_Error evaluation_subject ( human | model )  >
+<!ATTLIST Spelling_Error comment CDATA "" >
+
+<!ELEMENT Symantic_Error ( #PCDATA ) >
+<!ATTLIST Symantic_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Symantic_Error evaluation_subject ( human | model )  >
+<!ATTLIST Symantic_Error comment CDATA "" >
+
+<!ELEMENT Homonyms ( #PCDATA ) >
+<!ATTLIST Homonyms evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Homonyms evaluation_subject ( human | model )  >
+<!ATTLIST Homonyms comment CDATA "" >
+
+<!ELEMENT Implied_Inference ( #PCDATA ) >
+<!ATTLIST Implied_Inference evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Implied_Inference evaluation_subject ( human | model )  >
+<!ATTLIST Implied_Inference comment CDATA "" >
+
+<!ELEMENT Statistical_Inference ( #PCDATA ) >
+<!ATTLIST Statistical_Inference evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Statistical_Inference evaluation_subject ( human | model )  >
+<!ATTLIST Statistical_Inference comment CDATA "" >
+
+<!ELEMENT Synonym ( #PCDATA ) >
+<!ATTLIST Synonym evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Synonym evaluation_subject ( human | model )  >
+<!ATTLIST Synonym comment CDATA "" >
+
+<!ELEMENT Syntactic_Error ( #PCDATA ) >
+<!ATTLIST Syntactic_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Syntactic_Error evaluation_subject ( human | model )  >
+<!ATTLIST Syntactic_Error comment CDATA "" >
+
+<!ELEMENT Sentence_Boundaries ( #PCDATA ) >
+<!ATTLIST Sentence_Boundaries evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Sentence_Boundaries evaluation_subject ( human | model )  >
+<!ATTLIST Sentence_Boundaries comment CDATA "" >
+
+<!ELEMENT Typographical_Error ( #PCDATA ) >
+<!ATTLIST Typographical_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Typographical_Error evaluation_subject ( human | model )  >
+<!ATTLIST Typographical_Error comment CDATA "" >
+
+<!ELEMENT Logic_Error ( #PCDATA ) >
+<!ATTLIST Logic_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Logic_Error evaluation_subject ( human | model )  >
+<!ATTLIST Logic_Error comment CDATA "" >
+
+<!ELEMENT Logic_Pattern_Rule ( #PCDATA ) >
+<!ATTLIST Logic_Pattern_Rule evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Logic_Pattern_Rule evaluation_subject ( human | model )  >
+<!ATTLIST Logic_Pattern_Rule comment CDATA "" >
+
+<!ELEMENT Other_Error ( #PCDATA ) >
+<!ATTLIST Other_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Other_Error evaluation_subject ( human | model )  >
+<!ATTLIST Other_Error comment CDATA "" >
+
+<!ELEMENT Dictionary_Error ( #PCDATA ) >
+<!ATTLIST Dictionary_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Dictionary_Error evaluation_subject ( human | model )  >
+<!ATTLIST Dictionary_Error comment CDATA "" >
+
+<!ELEMENT Imcomplete_Extraction ( #PCDATA ) >
+<!ATTLIST Imcomplete_Extraction evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Imcomplete_Extraction evaluation_subject ( human | model )  >
+<!ATTLIST Imcomplete_Extraction comment CDATA "" >
+
+<!ELEMENT Normalization_Error ( #PCDATA ) >
+<!ATTLIST Normalization_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Normalization_Error evaluation_subject ( human | model )  >
+<!ATTLIST Normalization_Error comment CDATA "" >
+
+<!ELEMENT Temporal__Extraction_Error ( #PCDATA ) >
+<!ATTLIST Temporal__Extraction_Error evaluation_level ( mention | sentence | document | patient ) #IMPLIED "negated" >
+<!ATTLIST Temporal__Extraction_Error evaluation_subject ( human | model )  >
+<!ATTLIST Temporal__Extraction_Error comment CDATA "" >
