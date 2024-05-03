@@ -1,0 +1,1198 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/sfu3/ontologies/2023/9/CCEE_Taxonomy"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/sfu3/ontologies/2023/9/CCEE_Taxonomy">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Abbreviation_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Absence_of_Context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Annotation_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Certainty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contextual_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dictionary_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Differential_Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exclusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family_Member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Guideline_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#History"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hypothetical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Imcomplete_extraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Implication_and_Inference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linguistic_Errror"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Logic_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Logic_Pattern_and_Rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medical_Evaluation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medical_Grading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medical_Instruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medical_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Misclassification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Missing_Annotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Morphological_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nomonyms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Normalization_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orthographic_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient_Education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Possible"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Present"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Section"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Semantic_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sentence_Boundaries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spelling_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Statistical_Inference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Synonym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Syntactic_Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Typographical_Error"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#evaluation_level"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#example"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#nlp_approach"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Abbreviation_Error"/>
+        <Class IRI="#Orthographic_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Absence_of_Context"/>
+        <Class IRI="#Contextual_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certainty"/>
+        <Class IRI="#Contextual_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dictionary_Error"/>
+        <Class IRI="#Other_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Differential_Diagnosis"/>
+        <Class IRI="#Certainty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exclusion"/>
+        <Class IRI="#Contextual_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family_Member"/>
+        <Class IRI="#Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Guideline_Error"/>
+        <Class IRI="#Annotation_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#History"/>
+        <Class IRI="#Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hypothetical"/>
+        <Class IRI="#Certainty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Imcomplete_extraction"/>
+        <Class IRI="#Other_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Implication_and_Inference"/>
+        <Class IRI="#Semantic_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Logic_Pattern_and_Rule"/>
+        <Class IRI="#Logic_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medical_Evaluation"/>
+        <Class IRI="#Exclusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medical_Grading"/>
+        <Class IRI="#Certainty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medical_Instruction"/>
+        <Class IRI="#Exclusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medical_Risk"/>
+        <Class IRI="#Exclusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Misclassification"/>
+        <Class IRI="#Annotation_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Missing_Annotation"/>
+        <Class IRI="#Annotation_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Morphological_Error"/>
+        <Class IRI="#Linguistic_Errror"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negation"/>
+        <Class IRI="#Certainty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nomonyms"/>
+        <Class IRI="#Semantic_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Normalization_Error"/>
+        <Class IRI="#Other_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orthographic_Error"/>
+        <Class IRI="#Linguistic_Errror"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Other"/>
+        <Class IRI="#Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient_Education"/>
+        <Class IRI="#Exclusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Possible"/>
+        <Class IRI="#Certainty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Present"/>
+        <Class IRI="#Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Section"/>
+        <Class IRI="#Contextual_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Semantic_Error"/>
+        <Class IRI="#Linguistic_Errror"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sentence_Boundaries"/>
+        <Class IRI="#Syntactic_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spelling_Error"/>
+        <Class IRI="#Orthographic_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Statistical_Inference"/>
+        <Class IRI="#Semantic_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Status"/>
+        <Class IRI="#Contextual_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subject"/>
+        <Class IRI="#Contextual_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Synonym"/>
+        <Class IRI="#Semantic_Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Syntactic_Error"/>
+        <Class IRI="#Linguistic_Errror"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Typographical_Error"/>
+        <Class IRI="#Linguistic_Errror"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Abbreviation_Error</IRI>
+        <Literal>an abbreviation error occurs when the model misinterprets or fails to recognize abbreviated forms of words or phrases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Abbreviation_Error</IRI>
+        <Literal>•	COPD - Chronic Obstructive Pulmonary Disease
+•	UTI - Urinary Tract Infection
+•	GERD - Gastroesophageal Reflux Disease
+•	DM - Diabetes Mellitus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Absence_of_Context</IRI>
+        <Literal>NLP model falsely or partially captures concepts due to lack of enough context to determine the certainty, status and subject of the expression.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Absence_of_Context</IRI>
+        <Literal>mention, sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Absence_of_Context</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Absence_of_Context</IRI>
+        <Literal>‘Confusion’ (occurs as a single concept without context) 
+Correction: patient has a constant confused look displayed on his/her face.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Absence_of_Context</IRI>
+        <Literal>Absence_of_Context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Annotation_Error</IRI>
+        <Literal>Human error occurred during corpus annotation, which is a process involving the manual review, judgment, marking, and labeling of linguistic and clinical concepts from unstructured text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Annotation_Error</IRI>
+        <Literal>human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Annotation_Error</IRI>
+        <Literal>Annotation_Error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Certainty</IRI>
+        <Literal>NLP model falsely captures concepts due to incorrectly judging grade (within the power or capacity of someone or something), possible, probable-related terms or expressions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Certainty</IRI>
+        <Literal>mention, sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Certainty</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Certainty</IRI>
+        <Literal>Certainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Contextual_Error</IRI>
+        <Literal>information found in the context of the condition that modifies individual clinical conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Contextual_Error</IRI>
+        <Literal>mention, sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Contextual_Error</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Contextual_Error</IRI>
+        <Literal>Contexual_Error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Dictionary_Error</IRI>
+        <Literal>an error made by a middleware dictionary or knowledge base such Unified Medical Language System (UMLS) and MeSH (Medical Subject Headings)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Dictionary_Error</IRI>
+        <Literal>•	UMLS synonymy error
+•	UMLS absence error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Differential_Diagnosis</IRI>
+        <Literal>description that document a process where clinicians consider various possible conditions or diseases that could explain a patient&apos;s symptoms before making a final diagnosis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Differential_Diagnosis</IRI>
+        <Literal>sentence, section</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Differential_Diagnosis</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Differential_Diagnosis</IRI>
+        <Literal>Differential_Diagnosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Exclusion</IRI>
+        <Literal>NLP model falsely captures concepts due to the concepts occur in a wrong context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Exclusion</IRI>
+        <Literal>mention, sentence; document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Exclusion</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Exclusion</IRI>
+        <Literal>I was called to evaluate the patient for an episode of confusion
+Patient was screened for confusion
+Fall prevention education
+The nurse disconnected the call
+*The aforementioned concepts need to be excluded because they do not reflect patient’s disease status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Exclusion</IRI>
+        <Literal>Exclusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Family_Member</IRI>
+        <Literal>family member can be subjects of the study when their medical history, genetic information, or other factors are relevant to the research or medical care of the patient. The description can be commonly found in the family history section of clinical notes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Family_Member</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Family_Member</IRI>
+        <Literal>•	Patient’s grandpa has hypertension and diabetes (FP)
+•	Daughter/Son called and states patient has continued to be confused (TP)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Family_Member</IRI>
+        <Literal>Family_Member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Guideline_Error</IRI>
+        <Literal>errors occur due to conflicts between NLP definition and annotation guideline definition. E.g., the version of guideline does not align with NLP version.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Guideline_Error</IRI>
+        <Literal>mention, sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Guideline_Error</IRI>
+        <Literal>human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Guideline_Error</IRI>
+        <Literal>Guideline definition: encephalopathy = delirium positive
+NLP definition: encephalopathy = CAM_D</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Guideline_Error</IRI>
+        <Literal>Guideline_Error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#History</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#History</IRI>
+        <Literal>•	Patient has history of hallucinations (past)
+•	Patient described episodes of delirium several years ago (past)
+•	His hallucinations were resolved (past)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#History</IRI>
+        <Literal>History</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Hypothetical</IRI>
+        <Literal>A model&apos;s false classification of concepts is contingent on incorrectly judging hypothesis-related concepts or expressions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Hypothetical</IRI>
+        <Literal>sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Hypothetical</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Hypothetical</IRI>
+        <Literal>Patient would have delirium if the CAM screening test come out positive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hypothetical</IRI>
+        <Literal>Hypothetical_Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Imcomplete_extraction</IRI>
+        <Literal>The NLP model can only partially identify a concept, which cannot provide a complete picture for ascertaining a patient&apos;s status.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Imcomplete_extraction</IRI>
+        <Literal>mention, sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Imcomplete_extraction</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Imcomplete_extraction</IRI>
+        <Literal>•	Model only correctly captured disease and failed to identify grading: Punctate foci (grading) deep white matter (disease) lesion found.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Imcomplete_extraction</IRI>
+        <Literal>Imcomplete_Extraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Implication_and_Inference</IRI>
+        <Literal>missing paraphrase and implication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Implication_and_Inference</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Implication_and_Inference</IRI>
+        <Literal>Fall: 
+landing flat on his back
+missed the last step while going down the stairs
+patient went down with a sudden knee flexion
+
+Disorganized thinking
+Becoming more forgetful
+Difficulty with his/her speech particularly with word finding
+
+*Concepts or expressions that can directly/indirectly infer the target concept of interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Implication_and_Inference</IRI>
+        <Literal>Implied_Inference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Linguistic_Errror</IRI>
+        <Literal>linguistic errors refer to inaccuracies or inconsistencies in the representation of clinical expressions, including issues related to morphology, orthography, semantics, and syntax. These errors can lead to misclassification and occur more frequently in false negative expressions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Linguistic_Errror</IRI>
+        <Literal>mention, sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Linguistic_Errror</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Linguistic_Errror</IRI>
+        <Literal>Linguistic_Error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Logic_Error</IRI>
+        <Literal>logic errors occur when NLP model falsely make classification or summarization due to logic or rule patterns.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Logic_Error</IRI>
+        <Literal>mention, sentence, document, patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Logic_Error</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Logic_Error</IRI>
+        <Literal>Logic_Error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Logic_Pattern_and_Rule</IRI>
+        <Literal>logic errors occur when NLP model falsely make classification or summarization due to logic or rule patterns.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Logic_Pattern_and_Rule</IRI>
+        <Literal>mention, sentence, document, patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Logic_Pattern_and_Rule</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Logic_Pattern_and_Rule</IRI>
+        <Literal>Silent cerebrovascular disease = positive mention of brain infarction 
+Correction: positive mention of brain infarction without prior history of stroke
+
+CAM Delirium positive = CAM_BCD
+Correction: CAM Delirium positive = CAM_ABCD or CAM_ABC or CAM_ABD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Logic_Pattern_and_Rule</IRI>
+        <Literal>Logic_Pattern_Rule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Medical_Evaluation</IRI>
+        <Literal>communication of medical information, advice, and instructions to individuals seeking healthcare or treatment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Medical_Evaluation</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Medical_Evaluation</IRI>
+        <Literal>•	When to Call Your Doctor Call your doctor right away if you have any of the following: Confusion or forgetfullness Muscle spasms, cramping, or twitching Seizures Gait disturbances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Medical_Evaluation</IRI>
+        <Literal>Medical_Evaluation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Medical_Grading</IRI>
+        <Literal>A model incorrectly classifies concepts due to an erroneous assessment of grade, which pertains to the ability or capacity of someone or something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Medical_Grading</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Medical_Grading</IRI>
+        <Literal>Moderate scattered deep and subcortical punctate white matter
+Abnormal low- density in the right parietal periventricular white matter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Medical_Grading</IRI>
+        <Literal>Medical_Grading</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Medical_Instruction</IRI>
+        <Literal>communication of medical information, advice, and instructions to individuals seeking healthcare or treatment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Medical_Instruction</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Medical_Instruction</IRI>
+        <Literal>•	When to Call Your Doctor Call your doctor right away if you have any of the following: Confusion or forgetfullness Muscle spasms, cramping, or twitching Seizures Gait disturbances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Medical_Instruction</IRI>
+        <Literal>Medical_Instruction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Medical_Risk</IRI>
+        <Literal>communication about the likelihood and severity of harm or negative consequences that can result from medical decisions or actions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Medical_Risk</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Medical_Risk</IRI>
+        <Literal>increased risk of confusion and fall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Medical_Risk</IRI>
+        <Literal>Medical_Risk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Misclassification</IRI>
+        <Literal>Annotator captured incorrect concepts due to human errors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Misclassification</IRI>
+        <Literal>mention, sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Misclassification</IRI>
+        <Literal>human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Misclassification</IRI>
+        <Literal>Screening for delirium = delirium (positive)
+*Incorrect, screening for delirium should mark as delirium (exclusion)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Misclassification</IRI>
+        <Literal>Misclassification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Missing_Annotation</IRI>
+        <Literal>annotators fail to capture concepts due to human errors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Missing_Annotation</IRI>
+        <Literal>mention, sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Missing_Annotation</IRI>
+        <Literal>human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Missing_Annotation</IRI>
+        <Literal>Confusion/Disorientation Hendrich:   Yes
+Best Verbal Response Glasgow:   Confused</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Missing_Annotation</IRI>
+        <Literal>Missing_Annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Morphological_Error</IRI>
+        <Literal>morphologic errors occur when NLP models fails to capture the pre-defined concepts due to the variation in structure and formation of words (prefixes, suffixes and base words)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Morphological_Error</IRI>
+        <Literal>mention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Morphological_Error</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Morphological_Error</IRI>
+        <Literal>Hallucinates; Hallucination; 
+Altered; Alteration; Alter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Morphological_Error</IRI>
+        <Literal>Morphological_Error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Negation</IRI>
+        <Literal>NLP model falsely captures concepts due to incorrectly judging negation-related (contradiction or denial of something) terms or expressions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Negation</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Negation</IRI>
+        <Literal>Not able to be easily aroused
+Patient does not have encephalopathy.
+No history of confusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Negation</IRI>
+        <Literal>Negation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Nomonyms</IRI>
+        <Literal>words that are spelled and pronounced the same but have different meanings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Nomonyms</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Nomonyms</IRI>
+        <Literal>Fall: 
+Fall asleep
+Redwood falls
+Water falls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Nomonyms</IRI>
+        <Literal>Homonyms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Normalization_Error</IRI>
+        <Literal>An error occurred while mapping medical mentions to standardized ontologies like UMLS or controlled vocabularies like SNOMED CT.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Normalization_Error</IRI>
+        <Literal>•	In UMLS, some medications&apos; descriptions contain strength information, including &quot;cyanocobalamin 1000 MCG Oral Tablet&quot; (CUI: C0976004), &quot;cyanocobalamin 1000 MCG Oral Capsule&quot; (CUI: C0786262), etc. Based on the example: &quot;2. Cyanocobalamin 1000 mcg/mL Solution Sig: One (1) Injection DAILY (Daily) for 3 days,&quot; the system matched &quot;Cyanocobalamin 1000&quot; to CUI-C0976004 as a medication and ignored &quot;1000 mcg/ml&quot; as a strength.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Orthographic_Error</IRI>
+        <Literal>orthographic errors occur when NLP models fail to capture the pre-defined concepts due to the variation in language conventions including special characters, spelling, hyphenation, capitalization, word breaks, emphasis, and punctuation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Orthographic_Error</IRI>
+        <Literal>mention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Orthographic_Error</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Orthographic_Error</IRI>
+        <Literal>Decresed (Decreased) responsiveness 
+ell (Fell) last night 
+agitated (agitated)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Orthographic_Error</IRI>
+        <Literal>Orthographic_Error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Other</IRI>
+        <Literal>the target subject can also be non-human, such as disease symptoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Other</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Other</IRI>
+        <Literal>•	The character of symptoms is agitated.
+•	The course/duration of symptoms is fluctuating in intensity.
+•	The vision he says has been very blurry and it fluctuates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Other</IRI>
+        <Literal>Other_Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Other_Error</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Other_Error</IRI>
+        <Literal>Other_Error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Patient_Education</IRI>
+        <Literal>clinical language about providing patients with information, knowledge, and resources to help them understand their medical conditions, treatment options, and self-care practices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Patient_Education</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Patient_Education</IRI>
+        <Literal>•	Fall prevention education
+•	The nurse disconnected the call</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Patient_Education</IRI>
+        <Literal>Patient_Education</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Possible</IRI>
+        <Literal>NLP model falsely captures concepts due to incorrectly possible, probable-related terms or expressions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Possible</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Possible</IRI>
+        <Literal>Likely/probable focus of nonspecific white matter disease 
+Possibility of demyelinating disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Possible</IRI>
+        <Literal>Possible_and_Probable_Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Present</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Present</IRI>
+        <Literal>•	Patient experienced episode of confusion this morning (current)
+•	Currently CAM Positive (current)
+•	She has experienced confusion several times during the last few days (current/past)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Present</IRI>
+        <Literal>Present</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Section</IRI>
+        <Literal>(structure of clinical document e.g., Clinical Document Architecture HL7 standard): section errors occur when NLP models falsely captures the pre-defined concepts that belongs to wrong section.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Section</IRI>
+        <Literal>document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Section</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Section</IRI>
+        <Literal>Family History (Section ID)
+Hypertension: Yes
+Diabetes: Yes
+*Family information sometimes is considered as exclusion. Fail to consider the section information can result in misclassification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Section</IRI>
+        <Literal>Section</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Semantic_Error</IRI>
+        <Literal>a semantic error occurs when the meaning or interpretation of a clinical text is misunderstood by model or annotator. Common semantic error types include homonyms, implied inference, statistical inference, and synonym.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Semantic_Error</IRI>
+        <Literal>mention, sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Semantic_Error</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Semantic_Error</IRI>
+        <Literal>Semantic_Error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Sentence_Boundaries</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sentence_Boundaries</IRI>
+        <Literal>Sentence_Boundaries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Spelling_Error</IRI>
+        <Literal>a spelling error occurs when a deviation from the standard or intended spelling convention of the language led to misclassification for the model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Spelling_Error</IRI>
+        <Literal>•	Decresed (Decreased) responsiveness 
+•	agitated (agitated)
+•	ell (Fell) last night</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Statistical_Inference</IRI>
+        <Literal>ability of making proper statistic inference. Common examples include rare expression although occurs in training data, the model still unable to fully capture all possible cases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Statistical_Inference</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Statistical_Inference</IRI>
+        <Literal>Statistical_Inference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Status</IRI>
+        <Literal>temporal status refer to the current condition or state of a patient&apos;s medical or health-related information. It is used to distinguish between historical information (past status) and information that reflects the patient&apos;s current state (present status).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Status</IRI>
+        <Literal>mention, sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Status</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Status</IRI>
+        <Literal>Temporal_Status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Subject</IRI>
+        <Literal>an individual or entity that is the focus of attention or observation to be identified within a specific clinical context. Most common scenario is to refer to an individual who is receiving medical treatment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Subject</IRI>
+        <Literal>mention, sentence, document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Subject</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Subject</IRI>
+        <Literal>Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Synonym</IRI>
+        <Literal>synonym errors occur when NLP models miss new lexicon and synonym not in the original NLP ruleset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Synonym</IRI>
+        <Literal>model, human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Synonym</IRI>
+        <Literal>Disorganized thinking: fuzziness; obtunded; forgetful
+Difficulty concentrating: inattention
+Disconnected: obtunded; fatigue; somnolence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Synonym</IRI>
+        <Literal>Synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Syntactic_Error</IRI>
+        <Literal>Errors occur due to mistakes in the rules governing the structure of sentences or phrases, such as sentences that lack clarity (run-ons), sentence fragments, unclear modifiers, and failure to maintain agreements between elements in a sentence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_level"/>
+        <IRI>#Syntactic_Error</IRI>
+        <Literal>mention, sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#evaluation_subject"/>
+        <IRI>#Syntactic_Error</IRI>
+        <Literal>model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Syntactic_Error</IRI>
+        <Literal>•	Patient did not have dementia; but had several syncope events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Syntactic_Error</IRI>
+        <Literal>Syntactic_Error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Typographical_Error</IRI>
+        <Literal>typographical errors occur when NLP models fails to capture the pre-defined concepts due to the variation in the physical representation and appearance of text. Common typographical representations include inserting, deleting, replacing, and transposing the original word form and format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#example"/>
+        <IRI>#Typographical_Error</IRI>
+        <Literal>•	Randcom (insert)
+•	Randm (delete)
+•	Randcm (replace)
+•	Randmo (transpose)</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

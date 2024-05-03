@@ -1,0 +1,336 @@
+format-version: 1.2
+ontology: http://www.semanticweb.org/sfu3/ontologies/2023/9/CCEE_Taxonomy
+
+[Term]
+id: Abbreviation_Error
+is_a: Orthographic_Error ! Orthographic_Error
+property_value: definition "an abbreviation error occurs when the model misinterprets or fails to recognize abbreviated forms of words or phrases." xsd:string
+property_value: example "•	COPD - Chronic Obstructive Pulmonary Disease\n•	UTI - Urinary Tract Infection\n•	GERD - Gastroesophageal Reflux Disease\n•	DM - Diabetes Mellitus" xsd:string
+
+[Term]
+id: Absence_of_Context
+name: Absence_of_Context
+is_a: Contextual_Error ! Contexual_Error
+property_value: definition "NLP model falsely or partially captures concepts due to lack of enough context to determine the certainty, status and subject of the expression." xsd:string
+property_value: evaluation_level "mention, sentence" xsd:string
+property_value: evaluation_subject "model" xsd:string
+property_value: example "‘Confusion’ (occurs as a single concept without context) \nCorrection: patient has a constant confused look displayed on his/her face." xsd:string
+
+[Term]
+id: Annotation_Error
+name: Annotation_Error
+property_value: definition "Human error occurred during corpus annotation, which is a process involving the manual review, judgment, marking, and labeling of linguistic and clinical concepts from unstructured text." xsd:string
+property_value: evaluation_subject "human" xsd:string
+
+[Term]
+id: Certainty
+name: Certainty
+is_a: Contextual_Error ! Contexual_Error
+property_value: definition "NLP model falsely captures concepts due to incorrectly judging grade (within the power or capacity of someone or something), possible, probable-related terms or expressions." xsd:string
+property_value: evaluation_level "mention, sentence" xsd:string
+property_value: evaluation_subject "model" xsd:string
+
+[Term]
+id: Contextual_Error
+name: Contexual_Error
+property_value: definition "information found in the context of the condition that modifies individual clinical conditions." xsd:string
+property_value: evaluation_level "mention, sentence" xsd:string
+property_value: evaluation_subject "model" xsd:string
+
+[Term]
+id: Dictionary_Error
+is_a: Other_Error ! Other_Error
+property_value: definition "an error made by a middleware dictionary or knowledge base such Unified Medical Language System (UMLS) and MeSH (Medical Subject Headings)" xsd:string
+property_value: example "•	UMLS synonymy error\n•	UMLS absence error" xsd:string
+
+[Term]
+id: Differential_Diagnosis
+name: Differential_Diagnosis
+is_a: Certainty ! Certainty
+property_value: definition "description that document a process where clinicians consider various possible conditions or diseases that could explain a patient's symptoms before making a final diagnosis." xsd:string
+property_value: evaluation_level "sentence, section" xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+
+[Term]
+id: Exclusion
+name: Exclusion
+is_a: Contextual_Error ! Contexual_Error
+property_value: definition "NLP model falsely captures concepts due to the concepts occur in a wrong context." xsd:string
+property_value: evaluation_level "mention, sentence; document" xsd:string
+property_value: evaluation_subject "model" xsd:string
+property_value: example "I was called to evaluate the patient for an episode of confusion\nPatient was screened for confusion\nFall prevention education\nThe nurse disconnected the call\n*The aforementioned concepts need to be excluded because they do not reflect patient’s disease status" xsd:string
+
+[Term]
+id: Family_Member
+name: Family_Member
+is_a: Subject ! Subject
+property_value: definition "family member can be subjects of the study when their medical history, genetic information, or other factors are relevant to the research or medical care of the patient. The description can be commonly found in the family history section of clinical notes." xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "•	Patient’s grandpa has hypertension and diabetes (FP)\n•	Daughter/Son called and states patient has continued to be confused (TP)" xsd:string
+
+[Term]
+id: Guideline_Error
+name: Guideline_Error
+is_a: Annotation_Error ! Annotation_Error
+property_value: definition "errors occur due to conflicts between NLP definition and annotation guideline definition. E.g., the version of guideline does not align with NLP version." xsd:string
+property_value: evaluation_level "mention, sentence" xsd:string
+property_value: evaluation_subject "human" xsd:string
+property_value: example "Guideline definition: encephalopathy = delirium positive\nNLP definition: encephalopathy = CAM_D" xsd:string
+
+[Term]
+id: History
+name: History
+is_a: Status ! Temporal_Status
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "•	Patient has history of hallucinations (past)\n•	Patient described episodes of delirium several years ago (past)\n•	His hallucinations were resolved (past)" xsd:string
+
+[Term]
+id: Hypothetical
+name: Hypothetical_Language
+is_a: Certainty ! Certainty
+property_value: definition "A model's false classification of concepts is contingent on incorrectly judging hypothesis-related concepts or expressions." xsd:string
+property_value: evaluation_level "sentence" xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "Patient would have delirium if the CAM screening test come out positive" xsd:string
+
+[Term]
+id: Imcomplete_extraction
+name: Imcomplete_Extraction
+is_a: Other_Error ! Other_Error
+property_value: definition "The NLP model can only partially identify a concept, which cannot provide a complete picture for ascertaining a patient's status." xsd:string
+property_value: evaluation_level "mention, sentence" xsd:string
+property_value: evaluation_subject "model" xsd:string
+property_value: example "•	Model only correctly captured disease and failed to identify grading: Punctate foci (grading) deep white matter (disease) lesion found." xsd:string
+
+[Term]
+id: Implication_and_Inference
+name: Implied_Inference
+is_a: Semantic_Error ! Semantic_Error
+property_value: definition "missing paraphrase and implication." xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "Fall: \nlanding flat on his back\nmissed the last step while going down the stairs\npatient went down with a sudden knee flexion\n\nDisorganized thinking\nBecoming more forgetful\nDifficulty with his/her speech particularly with word finding\n\n*Concepts or expressions that can directly/indirectly infer the target concept of interest" xsd:string
+
+[Term]
+id: Linguistic_Errror
+name: Linguistic_Error
+property_value: definition "linguistic errors refer to inaccuracies or inconsistencies in the representation of clinical expressions, including issues related to morphology, orthography, semantics, and syntax. These errors can lead to misclassification and occur more frequently in false negative expressions" xsd:string
+property_value: evaluation_level "mention, sentence" xsd:string
+property_value: evaluation_subject "model" xsd:string
+
+[Term]
+id: Logic_Error
+name: Logic_Error
+property_value: definition "logic errors occur when NLP model falsely make classification or summarization due to logic or rule patterns." xsd:string
+property_value: evaluation_level "mention, sentence, document, patient" xsd:string
+property_value: evaluation_subject "model" xsd:string
+
+[Term]
+id: Logic_Pattern_and_Rule
+name: Logic_Pattern_Rule
+is_a: Logic_Error ! Logic_Error
+property_value: definition "logic errors occur when NLP model falsely make classification or summarization due to logic or rule patterns." xsd:string
+property_value: evaluation_level "mention, sentence, document, patient" xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "Silent cerebrovascular disease = positive mention of brain infarction \nCorrection: positive mention of brain infarction without prior history of stroke\n\nCAM Delirium positive = CAM_BCD\nCorrection: CAM Delirium positive = CAM_ABCD or CAM_ABC or CAM_ABD" xsd:string
+
+[Term]
+id: Medical_Evaluation
+name: Medical_Evaluation
+is_a: Exclusion ! Exclusion
+property_value: definition "communication of medical information, advice, and instructions to individuals seeking healthcare or treatment." xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "•	When to Call Your Doctor Call your doctor right away if you have any of the following: Confusion or forgetfullness Muscle spasms, cramping, or twitching Seizures Gait disturbances" xsd:string
+
+[Term]
+id: Medical_Grading
+name: Medical_Grading
+is_a: Certainty ! Certainty
+property_value: definition "A model incorrectly classifies concepts due to an erroneous assessment of grade, which pertains to the ability or capacity of someone or something." xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "Moderate scattered deep and subcortical punctate white matter\nAbnormal low- density in the right parietal periventricular white matter" xsd:string
+
+[Term]
+id: Medical_Instruction
+name: Medical_Instruction
+is_a: Exclusion ! Exclusion
+property_value: definition "communication of medical information, advice, and instructions to individuals seeking healthcare or treatment." xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "•	When to Call Your Doctor Call your doctor right away if you have any of the following: Confusion or forgetfullness Muscle spasms, cramping, or twitching Seizures Gait disturbances" xsd:string
+
+[Term]
+id: Medical_Risk
+name: Medical_Risk
+is_a: Exclusion ! Exclusion
+property_value: definition "communication about the likelihood and severity of harm or negative consequences that can result from medical decisions or actions." xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "increased risk of confusion and fall" xsd:string
+
+[Term]
+id: Misclassification
+name: Misclassification
+is_a: Annotation_Error ! Annotation_Error
+property_value: definition "Annotator captured incorrect concepts due to human errors" xsd:string
+property_value: evaluation_level "mention, sentence" xsd:string
+property_value: evaluation_subject "human" xsd:string
+property_value: example "Screening for delirium = delirium (positive)\n*Incorrect, screening for delirium should mark as delirium (exclusion)" xsd:string
+
+[Term]
+id: Missing_Annotation
+name: Missing_Annotation
+is_a: Annotation_Error ! Annotation_Error
+property_value: definition "annotators fail to capture concepts due to human errors" xsd:string
+property_value: evaluation_level "mention, sentence" xsd:string
+property_value: evaluation_subject "human" xsd:string
+property_value: example "Confusion/Disorientation Hendrich:   Yes\nBest Verbal Response Glasgow:   Confused" xsd:string
+
+[Term]
+id: Morphological_Error
+name: Morphological_Error
+is_a: Linguistic_Errror ! Linguistic_Error
+property_value: definition "morphologic errors occur when NLP models fails to capture the pre-defined concepts due to the variation in structure and formation of words (prefixes, suffixes and base words)" xsd:string
+property_value: evaluation_level "mention" xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "Hallucinates; Hallucination; \nAltered; Alteration; Alter" xsd:string
+
+[Term]
+id: Negation
+name: Negation
+is_a: Certainty ! Certainty
+property_value: definition "NLP model falsely captures concepts due to incorrectly judging negation-related (contradiction or denial of something) terms or expressions." xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "Not able to be easily aroused\nPatient does not have encephalopathy.\nNo history of confusion" xsd:string
+
+[Term]
+id: Nomonyms
+name: Homonyms
+is_a: Semantic_Error ! Semantic_Error
+property_value: definition "words that are spelled and pronounced the same but have different meanings." xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "Fall: \nFall asleep\nRedwood falls\nWater falls" xsd:string
+
+[Term]
+id: Normalization_Error
+is_a: Other_Error ! Other_Error
+property_value: definition "An error occurred while mapping medical mentions to standardized ontologies like UMLS or controlled vocabularies like SNOMED CT." xsd:string
+property_value: example "•	In UMLS, some medications' descriptions contain strength information, including \"cyanocobalamin 1000 MCG Oral Tablet\" (CUI: C0976004), \"cyanocobalamin 1000 MCG Oral Capsule\" (CUI: C0786262), etc. Based on the example: \"2. Cyanocobalamin 1000 mcg/mL Solution Sig: One (1) Injection DAILY (Daily) for 3 days,\" the system matched \"Cyanocobalamin 1000\" to CUI-C0976004 as a medication and ignored \"1000 mcg/ml\" as a strength." xsd:string
+
+[Term]
+id: Orthographic_Error
+name: Orthographic_Error
+is_a: Linguistic_Errror ! Linguistic_Error
+property_value: definition "orthographic errors occur when NLP models fail to capture the pre-defined concepts due to the variation in language conventions including special characters, spelling, hyphenation, capitalization, word breaks, emphasis, and punctuation." xsd:string
+property_value: evaluation_level "mention" xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "Decresed (Decreased) responsiveness \nell (Fell) last night \nagitated (agitated)" xsd:string
+
+[Term]
+id: Other
+name: Other_Subject
+is_a: Subject ! Subject
+property_value: definition "the target subject can also be non-human, such as disease symptoms." xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "•	The character of symptoms is agitated.\n•	The course/duration of symptoms is fluctuating in intensity.\n•	The vision he says has been very blurry and it fluctuates." xsd:string
+
+[Term]
+id: Other_Error
+name: Other_Error
+property_value: evaluation_subject "model" xsd:string
+
+[Term]
+id: Patient_Education
+name: Patient_Education
+is_a: Exclusion ! Exclusion
+property_value: definition "clinical language about providing patients with information, knowledge, and resources to help them understand their medical conditions, treatment options, and self-care practices." xsd:string
+property_value: evaluation_level "model, human" xsd:string
+property_value: example "•	Fall prevention education\n•	The nurse disconnected the call" xsd:string
+
+[Term]
+id: Possible
+name: Possible_and_Probable_Language
+is_a: Certainty ! Certainty
+property_value: definition "NLP model falsely captures concepts due to incorrectly possible, probable-related terms or expressions." xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "Likely/probable focus of nonspecific white matter disease \nPossibility of demyelinating disease" xsd:string
+
+[Term]
+id: Present
+name: Present
+is_a: Status ! Temporal_Status
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "•	Patient experienced episode of confusion this morning (current)\n•	Currently CAM Positive (current)\n•	She has experienced confusion several times during the last few days (current/past)" xsd:string
+
+[Term]
+id: Section
+name: Section
+is_a: Contextual_Error ! Contexual_Error
+property_value: definition "(structure of clinical document e.g., Clinical Document Architecture HL7 standard): section errors occur when NLP models falsely captures the pre-defined concepts that belongs to wrong section." xsd:string
+property_value: evaluation_level "document" xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "Family History (Section ID)\nHypertension: Yes\nDiabetes: Yes\n*Family information sometimes is considered as exclusion. Fail to consider the section information can result in misclassification." xsd:string
+
+[Term]
+id: Semantic_Error
+name: Semantic_Error
+is_a: Linguistic_Errror ! Linguistic_Error
+property_value: definition "a semantic error occurs when the meaning or interpretation of a clinical text is misunderstood by model or annotator. Common semantic error types include homonyms, implied inference, statistical inference, and synonym." xsd:string
+property_value: evaluation_level "mention, sentence" xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+
+[Term]
+id: Sentence_Boundaries
+name: Sentence_Boundaries
+is_a: Syntactic_Error ! Syntactic_Error
+property_value: evaluation_subject "model" xsd:string
+
+[Term]
+id: Spelling_Error
+is_a: Orthographic_Error ! Orthographic_Error
+property_value: definition "a spelling error occurs when a deviation from the standard or intended spelling convention of the language led to misclassification for the model." xsd:string
+property_value: example "•	Decresed (Decreased) responsiveness \n•	agitated (agitated)\n•	ell (Fell) last night" xsd:string
+
+[Term]
+id: Statistical_Inference
+name: Statistical_Inference
+is_a: Semantic_Error ! Semantic_Error
+property_value: definition "ability of making proper statistic inference. Common examples include rare expression although occurs in training data, the model still unable to fully capture all possible cases." xsd:string
+property_value: evaluation_subject "model" xsd:string
+
+[Term]
+id: Status
+name: Temporal_Status
+is_a: Contextual_Error ! Contexual_Error
+property_value: definition "temporal status refer to the current condition or state of a patient's medical or health-related information. It is used to distinguish between historical information (past status) and information that reflects the patient's current state (present status)." xsd:string
+property_value: evaluation_level "mention, sentence" xsd:string
+property_value: evaluation_subject "model" xsd:string
+
+[Term]
+id: Subject
+name: Subject
+is_a: Contextual_Error ! Contexual_Error
+property_value: definition "an individual or entity that is the focus of attention or observation to be identified within a specific clinical context. Most common scenario is to refer to an individual who is receiving medical treatment." xsd:string
+property_value: evaluation_level "mention, sentence, document" xsd:string
+property_value: evaluation_subject "model" xsd:string
+
+[Term]
+id: Synonym
+name: Synonym
+is_a: Semantic_Error ! Semantic_Error
+property_value: definition "synonym errors occur when NLP models miss new lexicon and synonym not in the original NLP ruleset" xsd:string
+property_value: evaluation_subject "model, human" xsd:string
+property_value: example "Disorganized thinking: fuzziness; obtunded; forgetful\nDifficulty concentrating: inattention\nDisconnected: obtunded; fatigue; somnolence" xsd:string
+
+[Term]
+id: Syntactic_Error
+name: Syntactic_Error
+is_a: Linguistic_Errror ! Linguistic_Error
+property_value: definition "Errors occur due to mistakes in the rules governing the structure of sentences or phrases, such as sentences that lack clarity (run-ons), sentence fragments, unclear modifiers, and failure to maintain agreements between elements in a sentence." xsd:string
+property_value: evaluation_level "mention, sentence" xsd:string
+property_value: evaluation_subject "model" xsd:string
+property_value: example "•	Patient did not have dementia; but had several syncope events." xsd:string
+
+[Term]
+id: Typographical_Error
+is_a: Linguistic_Errror ! Linguistic_Error
+property_value: definition "typographical errors occur when NLP models fails to capture the pre-defined concepts due to the variation in the physical representation and appearance of text. Common typographical representations include inserting, deleting, replacing, and transposing the original word form and format." xsd:string
+property_value: example "•	Randcom (insert)\n•	Randm (delete)\n•	Randcm (replace)\n•	Randmo (transpose)" xsd:string
+
