@@ -32,6 +32,7 @@ University of Pittsburgh, Pittsburgh, Pennsylvania
 University of Minnesota, Minneapolis, Minnesota
 Yale University, New Haven, Connecticut
 
-### Authors
-Sunyang Fu, Ph.D., MHI, Liwei Wang, Ph.D., Huan He, Ph.D., Andrew Wen, M.S., Nansu Zong, Ph.D., Anamika Kumari, MS, Feifan Liu, Ph.D., Sicheng Zhou, Rui Zhang, Ph.D., Chenyu Li, Yanshan Wang, Ph.D., Jennifer St Sauver Ph.D., Hongfang Liu, Ph.D., Sunghwan Sohn, Ph.D.
+### Reference
+Sunyang Fu, Liwei Wang, Huan He, Andrew Wen, Nansu Zong, Anamika Kumari, Feifan Liu, Sicheng Zhou, Rui Zhang, Chenyu Li, Yanshan Wang, Jennifer St Sauver, Hongfang Liu, Sunghwan Sohn, A taxonomy for advancing systematic error analysis in multi-site electronic health record-based clinical concept extraction, Journal of the American Medical Informatics Association, 2024;, ocae101, https://doi.org/10.1093/jamia/ocae101
+
 
