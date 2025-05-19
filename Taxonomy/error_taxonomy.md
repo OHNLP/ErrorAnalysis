@@ -1,4 +1,4 @@
-### Summary of Common Error Types for EHR-based Clinical Concept Extraction
+## Summary of Common Error Types for EHR-based Clinical Concept Extraction
 
 📂 Error Dimension | 📄 Error Class | 🔸 Error Sub-Class
 
@@ -54,7 +54,7 @@
   - 📄 5.2. [Dictionary error](#dictionary-error)
   - 📄 5.3. [Normalization error](#normalization-error)
 
-### Definitions and examples
+## Definitions and examples
 
 **<a id="annotation-error">📂 1. Annotation Error</a>**
 
