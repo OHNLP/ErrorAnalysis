@@ -303,10 +303,12 @@ _Definition:_ Linguistic errors refer to inaccuracies or inconsistencies in the 
     - landing flat on his back
     - missed the last step while going down the stairs
     - patient went down with a sudden knee flexion
-      _Example (delirium):_
+
+    _Example (delirium):_
+
     - Becoming more forgetful
     - Difficulty with his/her speech particularly with word finding
-      \*Concepts or expressions that can directly/indirectly infer the target concept of interest
+      -> Concepts or expressions that can directly/indirectly infer the target concept of interest
 
   - 🔸 **<a id="statistical-inference">3.3.3. Statistical inference</a>**
 
