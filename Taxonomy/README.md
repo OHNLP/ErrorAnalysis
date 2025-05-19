@@ -1,50 +1,69 @@
 ### Summary of Common Error Types for EHR-based Clinical Concept Extraction
 
-| **Error Dimension** | **Error Class** | **Error Sub-Class** |
-| --- | --- | --- |
-| 1\. Annotation Error | 1.1. Missing annotation | N/A |
-| 1.2. Guideline error | N/A |
-| 1.3. Misclassification | N/A |
-| 2\. Contextual Error | 2.1. Absence of context | N/A |
-| 2.2. Certainty | 2.2.1. Differential diagnosis |
-| 2.2.2. Hypothetical language |
-| 2.2.3. Medical grading |
-| 2.2.4. Negation |
-| 2.2.5. Possible and probable language |
-| 2.3. Exclusion | 2.3.1. Medical evaluation |
-| 2.3.2. Medical instruction |
-| 2.3.3. Medical risk |
-| 2.3.4. Patient education |
-| 2.4. Section | N/A |
-| 2.5. Temporal Status | 2.5.1 History |
-| 2.5.2 Present |
-| 2.6. Subject | 2.6.1 Family member |
-| 2.6.2 Other subject |
-| 3\. Linguistic | 3.1. Morphological error | N/A |
-| 3.2. Orthographic error | 3.2.1. Spelling error |
-| 3.2.2. Abbreviation error |
-| 3.3. Semantic error | 3.3.1. Homonyms |
-| 3.3.2. Implied inference |
-| 3.3.3. Statistical inference |
-| 3.3.4. Synonym |
-| 3.4. Syntactic error | 3.4.1. Sentence boundaries |
-| 3.5. Typographical error | N/A |
-| 4\. Logic Error | 4.1. Logic, pattern, and rule | N/A |
-| 5\. Other Error | 5.1. Incomplete extraction | N/A |
-| 5.2. Dictionary error | N/A |
-| 5.3. Normalization error | N/A |
+📂 Error Dimension | 📄 Error Class | 🔸 Error Sub-Class
 
+- 📂 **1. Annotation Error**
+
+  - 📄 1.1. Missing annotation
+  - 📄 1.2. Guideline error
+  - 📄 1.3. Misclassification
+
+- 📂 **2. Contextual Error**
+
+  - 📄 2.1. Absence of context
+  - 📄 2.2. Certainty
+    - 🔸 2.2.1. Differential diagnosis
+    - 🔸 2.2.2. Hypothetical language
+    - 🔸 2.2.3. Medical grading
+    - 🔸 2.2.4. Negation
+    - 🔸 2.2.5. Possible and probable language
+  - 📄 2.3. Exclusion
+    - 🔸 2.3.1. Medical evaluation
+    - 🔸 2.3.2. Medical instruction
+    - 🔸 2.3.3. Medical risk
+    - 🔸 2.3.4. Patient education
+  - 📄 2.4. Section
+  - 📄 2.5. Temporal Status
+    - 🔸 2.5.1. History
+    - 🔸 2.5.2. Present
+  - 📄 2.6. Subject
+    - 🔸 2.6.1. Family member
+    - 🔸 2.6.2. Other subject
+
+- 📂 **3. Linguistic Error**
+
+  - 📄 3.1. Morphological error
+  - 📄 3.2. Orthographic error
+    - 🔸 3.2.1. Spelling error
+    - 🔸 3.2.2. Abbreviation error
+  - 📄 3.3. Semantic error
+    - 🔸 3.3.1. Homonyms
+    - 🔸 3.3.2. Implied inference
+    - 🔸 3.3.3. Statistical inference
+    - 🔸 3.3.4. Synonym
+  - 📄 3.4. Syntactic error
+    - 🔸 3.4.1. Sentence boundaries
+  - 📄 3.5. Typographical error
+
+- 📂 **4. Logic Error**
+
+  - 📄 4.1. Logic, pattern, and rule
+
+- 📂 **5. Other Error**
+  - 📄 5.1. Incomplete extraction
+  - 📄 5.2. Dictionary error
+  - 📄 5.3. Normalization error
 
 ### Definition of Error Taxonomy
 
 1. **Annotation error:** Human error occurred during corpus annotation, which is a process involving the manual review, judgment, marking, and labeling of linguistic and clinical concepts from unstructured text.
-    1. **Missing annotation:** annotators fail to capture concepts due to human errors
+   1. **Missing annotation:** annotators fail to capture concepts due to human errors
 
 Example (delirium):
 
 - Confusion/Disorientation Hendrich: Yes
 - Best Verbal Response Glasgow: Confused
-    1. **Annotation guideline:** errors occur due to conflicts between NLP definition and annotation guideline definition. E.g., the version of guideline does not align with NLP version.
+  1. **Annotation guideline:** errors occur due to conflicts between NLP definition and annotation guideline definition. E.g., the version of guideline does not align with NLP version.
 
 Example (delirium):
 
@@ -61,7 +80,7 @@ Example (delirium):
 \*Incorrect, screening for delirium should mark as delirium (exclusion)
 
 1. **Contextual error:** information found in the context of the condition that modifies individual clinical conditions.
-    1. **Absence of context:** NLP model falsely or partially captures concepts due to lack of enough context to determine the certainty, status and subject of the expression
+   1. **Absence of context:** NLP model falsely or partially captures concepts due to lack of enough context to determine the certainty, status and subject of the expression
 
 Example (delirium):
 
@@ -70,13 +89,12 @@ Example (delirium):
 Correction:
 
 - Patient has a constant confused look displayed on his/her face.
-    1. **Certainty:** NLP model falsely captures concepts due to incorrectly judging grade (within the power or capacity of someone or something), possible, probable-related terms or expressions
-        1. **Differential diagnosis:** description that document a process where clinicians consider various possible conditions or diseases that could explain a patient's symptoms before making a final diagnosis.
+  1. **Certainty:** NLP model falsely captures concepts due to incorrectly judging grade (within the power or capacity of someone or something), possible, probable-related terms or expressions
+     1. **Differential diagnosis:** description that document a process where clinicians consider various possible conditions or diseases that could explain a patient's symptoms before making a final diagnosis.
 
 Example (SBI):
 
-- - One potential differential diagnosis for silent infarction could include other causes of neurological symptoms such as migraine with aura, transient ischemic attack (TIA), or small fiber neuropathy
-        1.  **Hypothetical language:** hypothesis-related concepts or expressions.
+- - One potential differential diagnosis for silent infarction could include other causes of neurological symptoms such as migraine with aura, transient ischemic attack (TIA), or small fiber neuropathy 1. **Hypothetical language:** hypothesis-related concepts or expressions.
 
 Example (delirium):
 
@@ -100,8 +118,8 @@ Example (WMD):
 
 - Likely/probable focus of nonspecific white matter disease
 - Possibility of demyelinating disease
-    1. **Exclusion:** NLP model falsely captures concepts due to the concepts occur in a wrong context
-        1. **Medical evaluation:** A description of a patient presenting to a clinic for evaluation and assessment of their condition. The concepts need to be excluded because they do not reflect patient’s disease status
+  1. **Exclusion:** NLP model falsely captures concepts due to the concepts occur in a wrong context
+     1. **Medical evaluation:** A description of a patient presenting to a clinic for evaluation and assessment of their condition. The concepts need to be excluded because they do not reflect patient’s disease status
 
 Example (delirium):
 
@@ -124,7 +142,7 @@ Example (fall, delirium):
 
 - Fall prevention education
 - The nurse disconnected the call
-    1. **Section:** (structure of clinical document e.g., Clinical Document Architecture HL7 standard): section errors occur when NLP models falsely captures the pre-defined concepts that belongs to wrong section.
+  1. **Section:** (structure of clinical document e.g., Clinical Document Architecture HL7 standard): section errors occur when NLP models falsely captures the pre-defined concepts that belongs to wrong section.
 
 Example (delirium):
 
@@ -137,7 +155,7 @@ Diabetes: Yes
 \*Family information sometimes is considered as exclusion. Fail to consider the section information can result in misclassification.
 
 - 1. **Temporal Status:** temporal status refer to the current condition or state of a patient's medical or health-related information. It is used to distinguish between historical information (past status) and information that reflects the patient's current state (present status).
-        1. **History**
+     1. **History**
 
 Example (delirium):
 
@@ -151,8 +169,8 @@ Example (delirium):
 - Patient experienced episode of confusion this morning (current)
 - Currently CAM Positive (current)
 - She has experienced confusion several times during the last few days (current/past)
-    1. **Subject:** an individual or entity that is the focus of attention or observation to be identified within a specific clinical context. Most common scenario is to refer to an individual who is receiving medical treatment.
-        1. **Family member:** family member can be subjects of the study when their medical history, genetic information, or other factors are relevant to the research or medical care of the patient. The description can be commonly found in the family history section of clinical notes.
+  1. **Subject:** an individual or entity that is the focus of attention or observation to be identified within a specific clinical context. Most common scenario is to refer to an individual who is receiving medical treatment.
+     1. **Family member:** family member can be subjects of the study when their medical history, genetic information, or other factors are relevant to the research or medical care of the patient. The description can be commonly found in the family history section of clinical notes.
 
 Example (delirium):
 
@@ -167,14 +185,14 @@ Example (delirium):
 - The vision he says has been very blurry and it fluctuates.
 
 1. **Linguistic error:** linguistic errors refer to inaccuracies or inconsistencies in the representation of clinical expressions, including issues related to morphology, orthography, semantics, and syntax. These errors can lead to misclassification and occur more frequently in false negative expressions
-    1. **Morphological error:** morphologic errors occur when NLP models fails to capture the pre-defined concepts due to the variation in structure and formation of words (prefixes, suffixes and base words)
+   1. **Morphological error:** morphologic errors occur when NLP models fails to capture the pre-defined concepts due to the variation in structure and formation of words (prefixes, suffixes and base words)
 
 Example (delirium):
 
 - Hallucinates; Hallucination;
 - Altered; Alteration; Alter
-    1. **Orthographic error:** orthographic errors occur when NLP models fail to capture the pre-defined concepts due to the variation in language conventions including special characters, spelling, hyphenation, capitalization, word breaks, emphasis, and punctuation.
-        1. **Spelling error**: a spelling error occurs when a deviation from the standard or intended spelling convention of the language led to misclassification for the model.
+  1. **Orthographic error:** orthographic errors occur when NLP models fail to capture the pre-defined concepts due to the variation in language conventions including special characters, spelling, hyphenation, capitalization, word breaks, emphasis, and punctuation.
+     1. **Spelling error**: a spelling error occurs when a deviation from the standard or intended spelling convention of the language led to misclassification for the model.
 
 Example (delirium; fall):
 
@@ -189,8 +207,8 @@ Example:
 - UTI - Urinary Tract Infection
 - GERD - Gastroesophageal Reflux Disease
 - DM - Diabetes Mellitus
-    1. **Semantic error:** a semantic error occurs when the meaning or interpretation of a clinical text is misunderstood by model or annotator. Common semantic error types include homonyms, implied inference, statistical inference, and synonym.
-        1. **Homonyms:** words that are spelled and pronounced the same but have different meanings.
+  1. **Semantic error:** a semantic error occurs when the meaning or interpretation of a clinical text is misunderstood by model or annotator. Common semantic error types include homonyms, implied inference, statistical inference, and synonym.
+     1. **Homonyms:** words that are spelled and pronounced the same but have different meanings.
 
 Example (fall):
 
@@ -218,20 +236,20 @@ Example (fall):
 
 - - Common expression: patient fell.
     - Rare expression: when he went down, his hands were behind him.
-        1. **Synonym:** missing new lexicon and synonym not in the original NLP ruleset
+      1. **Synonym:** missing new lexicon and synonym not in the original NLP ruleset
 
 Example (delirium):
 
 - Disorganized thinking: fuzziness; obtunded; forgetful
 - Difficulty concentrating: inattention
 - Disconnected: obtunded; fatigue; somnolence
-    1. **Syntactic error:** a syntactic error occurs when violating the grammatical structure or rules of the language especially when the system fails to parse or understand the grammatical structure of sentences or phrases correctly.
-        1. **Sentence boundaries:** sentence boundary detection is a task of segmenting individual sentences within a block of clinical text. Imperfect sentence boundaries, due to the lack of punctuation, can cause errors for sentence-level classifiers or extractors.
+  1. **Syntactic error:** a syntactic error occurs when violating the grammatical structure or rules of the language especially when the system fails to parse or understand the grammatical structure of sentences or phrases correctly.
+     1. **Sentence boundaries:** sentence boundary detection is a task of segmenting individual sentences within a block of clinical text. Imperfect sentence boundaries, due to the lack of punctuation, can cause errors for sentence-level classifiers or extractors.
 
 Example (fall):
 
 - Patient did not have dementia; but had several syncope events.
-    1. **Typographical error**: typographical errors occur when NLP models fails to capture the pre-defined concepts due to the variation in the physical representation and appearance of text. Common typographical representations include inserting, deleting, replacing, and transposing the original word form and format.
+  1. **Typographical error**: typographical errors occur when NLP models fails to capture the pre-defined concepts due to the variation in the physical representation and appearance of text. Common typographical representations include inserting, deleting, replacing, and transposing the original word form and format.
 
 Example:
 
@@ -241,7 +259,7 @@ Example:
 - Randmo (transpose)
 
 1. **Logic error**: logic errors occur when NLP model falsely make classification or summarization due to logic or rule patterns.
-    1. **Logic pattern rule:** logic errors occur when NLP model falsely make classification or summarization due to logic or rule patterns.
+   1. **Logic pattern rule:** logic errors occur when NLP model falsely make classification or summarization due to logic or rule patterns.
 
 Example (SBI, delirium):
 
@@ -251,20 +269,19 @@ Example (SBI, delirium):
   - Correction: CAM Delirium positive = CAM_ABCD or CAM_ABC or CAM_ABD
 
 1. **Other error**
-    1. **Incomplete extraction:** the NLP model can only partially identify a concept, which cannot provide a complete picture for ascertaining a patient's status.
+   1. **Incomplete extraction:** the NLP model can only partially identify a concept, which cannot provide a complete picture for ascertaining a patient's status.
 
 Example (WMD):
 
 - Model only correctly captured disease and failed to identify grading: Punctate foci (grading) deep white matter (disease) lesion found.
-    1. **Dictionary error**: an error made by a middleware dictionary or knowledge base such Unified Medical Language System (UMLS) and MeSH (Medical Subject Headings)
+  1. **Dictionary error**: an error made by a middleware dictionary or knowledge base such Unified Medical Language System (UMLS) and MeSH (Medical Subject Headings)
 
 Example:
 
 - UMLS synonymy error
 - UMLS absence error
-    1. **Normalization error**: An error occurred while mapping medical mentions to standardized ontologies like UMLS or controlled vocabularies like SNOMED CT.
+  1. **Normalization error**: An error occurred while mapping medical mentions to standardized ontologies like UMLS or controlled vocabularies like SNOMED CT.
 
 Example:
 
 - In UMLS, some medications' descriptions contain strength information, including "cyanocobalamin 1000 MCG Oral Tablet" (CUI: C0976004), "cyanocobalamin 1000 MCG Oral Capsule" (CUI: C0786262), etc. Based on the example: "2. Cyanocobalamin 1000 mcg/mL Solution Sig: One (1) Injection DAILY (Daily) for 3 days," the system matched "Cyanocobalamin 1000" to CUI-C0976004 as a medication and ignored "1000 mcg/ml" as a strength.
-
