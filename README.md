@@ -2,7 +2,7 @@
 
 Welcome to our Error Taxonomy project! The finalized taxonomy is available in both .dtd and .owl formats. It is also compatible with several different open-source annotation tools, including MAE, Brat, and MedTator. 
 
-Full Taxonomy: https://github.com/OHNLP/ErrorAnalysis/tree/main/Taxonomy
+Full Taxonomy: [https://github.com/OHNLP/ErrorAnalysis/tree/main/Taxonomy](https://github.com/OHNLP/ErrorAnalysis/blob/main/Taxonomy/error_taxonomy.md)
 
 Online demo: https://medtator.ohnlp.org/.
 
