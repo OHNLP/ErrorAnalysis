@@ -35,4 +35,6 @@ Yale University, New Haven, Connecticut
 ### Reference
 Sunyang Fu, Liwei Wang, Huan He, Andrew Wen, Nansu Zong, Anamika Kumari, Feifan Liu, Sicheng Zhou, Rui Zhang, Chenyu Li, Yanshan Wang, Jennifer St Sauver, Hongfang Liu, Sunghwan Sohn, A taxonomy for advancing systematic error analysis in multi-site electronic health record-based clinical concept extraction, Journal of the American Medical Informatics Association, 2024;, ocae101, https://doi.org/10.1093/jamia/ocae101
 
+Liu H, Fu S, Lu Q, Ahn J, Chen F, Yin H, Wen J, Yue Z, Harrison T, Jun J, Ruan X. MedError: A Machine-Assisted Framework for Systematic Error Analysis in Clinical Concept Extraction. Research Square. 2025 Sep 17:rs-3.
+
 
